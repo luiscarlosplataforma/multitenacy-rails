@@ -86,5 +86,5 @@ pickle-email-*.html
 .ruby-version
 .ruby-gemset
 
-
-
+# Ignoring 
+Gemfile.lock
