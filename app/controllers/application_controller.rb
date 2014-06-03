@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
   def set_current_site
 
     current_ip = "190.110.156.23"
+    # colombia ip
+    # current_ip = "181.253.212.161"
+
 
     datfile = "/usr/local/share/GeoIP/GeoLiteCity.dat"
     c = GeoIP.new(datfile)
