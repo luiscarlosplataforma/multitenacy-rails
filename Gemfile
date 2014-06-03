@@ -41,6 +41,8 @@ gem 'devise'
 gem 'figaro'
 gem 'haml-rails'
 gem 'mongoid'
+gem 'mongoid-multitenancy'
+gem 'geoip'
 
 group :development do
   gem 'better_errors'
