@@ -20,11 +20,11 @@ module Globaltest
 
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
-      
+
       g.test_framework :rspec, fixture: true
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
-      
-      
+
+
       g.view_specs false
       g.helper_specs false
     end
@@ -80,3 +80,6 @@ module Globaltest
     config.assets.version = '1.0'
   end
 end
+
+require "#{Rails.root}/lib/check_enabled"
+require "#{Rails.root}/lib/civico_form_builder"
