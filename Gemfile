@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.1'
 gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
@@ -46,10 +46,12 @@ gem 'geoip'
 
 group :development do
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_20]
+  gem 'binding_of_caller', :platforms=>[:mri_20, :mri_21]
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'pry'
+  gem 'mongoid_colored_logger'
 end
 
 group :development, :test do
