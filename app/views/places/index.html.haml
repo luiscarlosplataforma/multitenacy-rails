@@ -1,0 +1,21 @@
+%h1 Listing places
+%h2=Mongoid::Multitenancy.current_tenant.name
+%h3=I18n.locale
+%h4=t("hello")
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @places.each do |place|
+    %tr
+      %td= place.name
+      %td= link_to 'Show', place
+      %td= link_to 'Edit', edit_place_path(place)
+      %td= link_to 'Destroy', place, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Place', new_place_path
